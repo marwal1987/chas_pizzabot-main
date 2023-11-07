@@ -1,10 +1,10 @@
-// Check prompt vs menu
+// Check prompt vs pizza menu
 function checkOrderName(orderName) {
   //  Add while loop to restart when alert i triggered in else?
   if (
-    orderName == vegetarian ||
-    orderName == hawaiian ||
-    orderName == pepperoni
+    orderName.toLowerCase() == vegetarian.toLowerCase() ||
+    orderName.toLowerCase() == hawaiian.toLowerCase() ||
+    orderName.toLowerCase() == pepperoni.toLowerCase()
   ) {
     return orderName;
   } else {
@@ -51,7 +51,7 @@ checkOrderName(orderName);
 
 let orderQuantity = prompt(`How many of ${orderName} do you want?`);
 
-// 2.4 Finalizing the order
+// Finalizing the order
 
 let orderTotal;
 totalCost(orderQuantity);
