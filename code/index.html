@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Sprint 2: Pizzabot</title>
+    <meta charset="utf-8" />
+    <title>Pizzabot</title>
     <script src="./pizzabot.js" charset="utf-8"></script>
+    <!-- <script src="./pizza-form.js"></script> -->
   </head>
   <body>
-    Edit pizzabot.js to complete this assignment.
+    <h1>!THIS SITE IS UNDER CONSTRUCTION! <br />Welcome to Pomodoro Pizza!</h1>
+    <form action="https://httpbin.org/anything" method="post" id="order-pizza">
+      <div class="pizza-selection">
+        <h3>Select the name of the pizza you want to order today.</h3>
+        <label for="pizza-select"></label>
+        <select name="pizza-select" id="pizza-select" required>
+          <option value="">Please select</option>
+          <option value="hawaii">Hawaii Pizza</option>
+          <option value="pepperoni">Pepperoni Pizza</option>
+          <option value="vegetarian">Vegetarian Pizza</option>
+        </select>
+      </div>
+
+      <div class="pizza-quantity">
+        <h3>How many pizzas would you like to order</h3>
+        <label for="quantity">Quantity (between 1 and 10):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" />
+      </div>
+
+      <input type="submit" />
+    </form>
   </body>
 </html>
