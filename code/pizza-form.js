@@ -51,7 +51,7 @@ let orderQuantity = document.getElementById("quantity"); // gissar getELementByI
 let waitTime;
 let orderTotal;
 
-// Trigga cookingTime och totalcast när man tryckt på submit. Är det här man använder Eventlisteners och sånt kanske?
+// Trigga cookingTime och totalCost när man tryckt på submit. Är det här man använder Eventlisteners och sånt kanske?
 cookingTime(orderQuantity);
 totalCost(orderQuantity);
 
